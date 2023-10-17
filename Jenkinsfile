@@ -14,7 +14,7 @@ pipeline {
 
        stage ('Build') {
          steps {
-              sh 'mvn clean install -f WebApp/pom.xml'
+            sh '${mvnHome}/usr/bin/mvn -f WebApp/pom.xml sonar:sonar'
             }
         }
 
