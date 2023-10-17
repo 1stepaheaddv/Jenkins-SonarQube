@@ -17,18 +17,15 @@
   </dependencies>
   <build>
     <finalName>WebApp</finalName>
-  </build>
-  <build>
     <plugins>
       <plugin>
         <groupId>org.sonarsource.scanner.maven</groupId>
         <artifactId>sonar-maven-plugin</artifactId>
         <version>3.10.0.2594</version>
         <configuration>
-          <sonar.login>sqa_1241c04a9dede3d9282325cd17f7c5d70582949a</sonar.login>
+          <sonar.login>YOUR_AUTHENTICATION_TOKEN</sonar.login>
         </configuration>
       </plugin>
     </plugins>
   </build>
 </project>
-
