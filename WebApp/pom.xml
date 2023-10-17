@@ -23,7 +23,7 @@
         <artifactId>sonar-maven-plugin</artifactId>
         <version>3.10.0.2594</version>
         <configuration>
-          <sonar.login>YOUR_AUTHENTICATION_TOKEN</sonar.login>
+          <sonar.login>sqa_1241c04a9dede3d9282325cd17f7c5d70582949a</sonar.login>
         </configuration>
       </plugin>
     </plugins>
