@@ -14,14 +14,14 @@ pipeline {
 
        stage ('Build') {
          steps {
-            sh '${mvnHome}/usr/bin/mvn -f WebApp/pom.xml sonar:sonar'
+              sh 'mvn clean install -f MyWebApp/pom.xml'
             }
         }
 
         stage ('Code Quality') {
         steps {
             withSonarQubeEnv('SonarQube') {
-            sh 'mvn -f WebApp/pom.xml sonar:sonar'
+            sh '${mvnHome}/usr/bin/mvn -f WebApp/pom.xml sonar:sonar'
             }
       }
     }
